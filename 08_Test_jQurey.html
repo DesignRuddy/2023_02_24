@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> jQuery.html  </title>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+    $('#A1 > span:first-child').css('border','2px solid red') ;
+    $('#A1 > span:last-child').css('border','2px solid red') ;
+
+    $('#A2 > strong:first-of-type').css('border','2px solid yellow') ;
+    $('#A2 > strong:last-child').css('border','2px solid yellow') ;
+
+    $('#A3 > span:nth-child(1)').css('border','2px solid pink') ;
+    $('#A3 > span:nth-last-of-type(1)').css('border','2px solid pink') ;
+    
+    $('#A4 > span:nth-of-type(1)').css('border','2px solid green') ;
+    $('#A4 > span:last-of-type(1)').css('border','2px solid green') ;
+
+    $('#A5 > span:only-child').css('border','5px solid blue') ;
+    $('#A6 > span:only-of-type').css('border','5px solid red') ;
+    }) ;
+</script>
+  
+</head>
+<!-- 주석 '시작' 입니다.    ------  -->
+<body>
+    <h3> jQuery.html  </h3>
+    <br>
+    <div id="A1">
+    <span>내용1_1</span>
+    <span>내용1_2</span>
+    <span>내용1_3</span>
+    </div>
+
+        <div id="A2">
+            <span>내용2_1</span>
+            <strong>내용2_2</strong>
+            <span>내용2_3</span>
+            <strong>내용2_4</strong>
+            </div>
+
+            <div id="A3">
+                <span>내용3_1</span>
+                <span>내용3_2</span>
+                <span>내용3_3</span>
+                </div>
+
+                <div id="A4">
+                    <strong>내용4_1</strong>
+                    <span>내용4_2</span>
+                    <strong>내용4_3</strong>
+                    <span>내용4_4</span>
+                    <strong>내용4_5</strong>
+                    <span>내용4_6</span>
+                    </div>
+
+                    <div id="A5">
+                        <span>내용5_1</span>
+                        </div>
+
+                        <div id="A6">
+                            <span>내용6_1</span>
+                            <span>내용6_2</span>
+                            </div>
+</body>
+<!-- 주석 '끝' 입니다.    ------  -->
+<style>
+    /*css주석 기입  */
+    *{
+        font-size: 16pt;
+        margin: 5px;
+    }
+</style>
+</html>

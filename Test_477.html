@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> jQuery.html  </title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+    
+<script>
+    $(document).ready(function(){
+        $('#m1 > div').addClass('box');
+        $('#m2 > div').addClass(function(index){
+            return "circle"+index;
+        });
+    });
+</script>
+  
+</head>
+<!-- 주석 '시작' 입니다.    ------  -->
+<body>
+    <h3> jQuery.html  </h3>
+    <div>
+        <div id="m1">jQuery</div>
+    </div>
+    <div id="m2">
+        <div>html</div>
+        <div>css</div>
+        <div>javascript</div>
+    </div>
+</body>
+<!-- 주석 '끝' 입니다.    ------  -->
+<style>
+    /*css주석 기입  */
+    *{  
+        margin: 0;
+        padding: 0;
+        font-size: 16pt;
+    }
+    #m2{
+        text-align: center;
+    }
+    .box{
+        border-bottom: 2px solid #ccc;
+        text-align: center;
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+    .circle0,
+    .circle1,
+    .circle2 {
+        width: 200px;
+        height: 200px;
+        border-radius: 150px;
+        border: 4px solid #ff6600;
+        line-height: 200px; display: inline-block;
+    }
+</style>
+</html>
